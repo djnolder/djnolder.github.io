@@ -1,3 +1,7 @@
+{#
+	Twig template built to handle
+#}
+
 <div id="lll_search">
 	<div id="controls">
 		<h3 class="title">Find Your Home</h3>
@@ -171,7 +175,7 @@
 								{% for i in range(0, 12) %}
 									{% set v = 100000 + i * 25000 %}
 									<option value="{{v}}">${{ v / 1000 }}k</option>
-								}
+								#}
 								{% endfor %}
 							</select>
 							<select name="Price[max]" id="filter_max_price" class="filter" data-filter="price" data-comparison="<=" data-hashkey="prx">
